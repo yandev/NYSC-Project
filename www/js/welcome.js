@@ -65,11 +65,12 @@
      // var bucketname = "newstest-userfiles-mobilehub-1607183395";
    // nyscapp - userfiles - mobilehub - 145406771
     var bucketname;// = "nyscapp-userfiles-mobilehub-145406771";
-     document.addEventListener('deviceready', onDeviceReady.bind(this), false);
+    // document.addEventListener('deviceready', onDeviceReady.bind(this), false);
 
-  
+   
 
-     function onDeviceReady() {
+    ons.ready(function() {
+        
 
          //alert(cordova.file); alert(navigator.camera)
           bucketname = new AWS.S3({ params: { Bucket: "newstest-userfiles-mobilehub-1607183395" } });
@@ -1242,6 +1243,7 @@ console.dir(arguments);
       
                                /*
       
+      
                                data = {
                                 AssumedRoleUser: {
                                  Arn: "arn:aws:sts::123456789012:assumed-role/demo/Bob", 
@@ -1255,6 +1257,8 @@ console.dir(arguments);
                                 }, 
                                 PackedPolicySize: 6
                                }
+                               
+                               
                                */
       
       
@@ -1263,8 +1267,8 @@ console.dir(arguments);
                                //call refresh method in order to authenticate user and get new temp credentials
                                $('#signinspinner').fadeOut();
       
-      
-      
+                
+                                document.location.href  = "main.html";
                                document.querySelector('#myNavigator').pushPage('main.html');
       
                            },
@@ -2635,7 +2639,7 @@ function LoadallState(){
 
 
 
-     }
+     })
 
      
 

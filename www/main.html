@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>main corpers page</title>
+ 
+</head>
+
+<body>
+
+<ons-tabbar position="auto" animation="slide">
+  <ons-tab  icon="ion-information-circled, material:md-info" page="news.html" active>
+  </ons-tab>
+
+    <ons-tab  icon="ion-ios-book-outline, library books" page="yearbook.html">
+  </ons-tab>
+      <ons-tab  icon="ion-person, account circle"  page="profile.html">
+  </ons-tab>
+       <ons-tab  icon="ion-ios-gear-outline, settings"  page="setting.html">
+  </ons-tab>
+</ons-tabbar>
+
+
+  
+<ons-template id="news.html">
+    <ons-page id="newspage">
+    <div id="progress-bar-news" class="progress-bar  progress-bar--material progress-bar--indeterminate">
+</div>
+    <!--     <ons-toolbar>
+    				
+			  
+        <div class="center News-top-center ">
+                  <ons-button modifier="outline"  id="btn-all-newspage" class="button-margin News-top-bottons">All</ons-button>
+                 <ons-button modifier="outline" id="btn-State-newspage" class="button-margin News-top-bottons">State</ons-button>
+								 <ons-button modifier="outline" id="btn-LGA-newspage" class="button-margin News-top-bottons">LGA</ons-button>
+								 
+		</div>
+								
+  
+       </ons-toolbar>
+    
+	-->
+			 			<div id="container-id">
+
+
+	
+
+
+						 </div>
+	  
+     <div id="thatsall-id">Thats ALL.....</div>
+    </ons-page>
+</ons-template>
+
+
+
+    
+<ons-template id="yearbook.html">
+
+
+  
+    <ons-page id="yearbookpage">
+       <ons-toolbar>
+	  <div class="center">
+		  <div class="yearbook-info">
+			  <span id="State_name">
+							
+			  </span>
+	  <span id="">
+			Batch
+		<span id="Batch_name">
+				
+	  </span> 
+	  </span>
+	  <span id="year-id">
+			
+	  </span> 
+		  </div>
+		  
+	  </div>
+			
+	   <div class="right" id="ViewMore-options">		  
+				  <ons-button modifier="outline" id="choose_year" class="button-margin">More Options</ons-button>
+	   </div>
+    </ons-toolbar>
+
+	
+    	
+
+			
+			<div id="freewall" class="free-wall">
+				
+				
+				
+							
+
+		</div>
+				<div id="progress-id-yearbook"> 
+						<svg class="progress-circular progress-circular--material progress-circular--indeterminate">
+						<circle class="progress-circular__background progress-circular--material__background"/>
+						<circle class="progress-circular__primary progress-circular--material__primary progress-circular--indeterminate__primary"/>
+						<circle class="progress-circular__secondary progress-circular--material__secondary progress-circular--indeterminate__secondary"/>
+					  </svg>
+				</div>
+
+
+			
+			
+		
+   
+    </ons-page>
+</ons-template>
+	
+<ons-template id="ViewMoreoptions.html">
+	<ons-page id="ViewMoreoptionspage">
+			<ons-toolbar>
+            
+       <div class="left">
+	
+		 <ons-back-button>Back</ons-back-button>
+
+	  </div>
+	<div class="center">
+	
+	</div>
+  
+	   </ons-toolbar>
+
+
+
+ <div class=""> 
+
+
+	<div class="State_batch_div">
+
+		<div class="State_choice_batch_choice">
+				 
+					
+<select class="choose-sel select-input" id="state-select">
+                                 				<option > Choose State</option>
+                                               <option value="FCT">FCT</option>
+                                               <option value="Lagos">Lagos</option>
+                                               <option value="Abia">Abia</option>
+                                               <option value="Adamawa">Adamawa</option>
+                                               <option value="Akwa_Ibom">Akwa Ibom</option>
+                                               <option value="Anambra">Anambra</option>
+                                               <option value="Bauchi">Bauchi</option>
+                                               <option value="Bayelsa">Bayelsa</option>
+                                               <option value="Benue">Benue</option>
+                                               <option value="Borno">Borno</option>
+                                               <option value="Cross_River">Cross River</option>
+                                               <option value="Delta">Delta</option>
+                                               <option value="Ebonyi">Ebonyi</option>
+                                               <option value="Edo">Edo</option>
+                                               <option value="Ekiti">Ekiti</option>
+                                               <option value="Enugu">Enugu</option>
+                                               <option value="Gombe">Gombe</option>
+                                               <option value="Imo">Imo</option>
+                                               <option value="Jigawa">Jigawa</option>
+                                               <option value="Kaduna">Kaduna</option>
+                                               <option value="Kano">Kano</option>
+                                               <option value="katsina">katsina</option>
+                                               <option value="Kogi">Kogi</option>
+                                               <option value="Kwara">Kwara</option>
+                                               <option value="Nasarawa">Nasarawa</option>
+                                               <option value="Niger">Niger</option>
+                                               <option value="Ogun">Ogun</option>
+                                               <option value="Ondo">Ondo</option>
+                                               <option value="Osun">Osun</option>
+                                               <option value="Oyo">Oyo</option>
+                                               <option value="Plateu">Plateu</option>
+                                               <option value="Rivers">Rivers</option>
+                                               <option value="Sokoto">Sokoto</option>
+                                               <option value="Taraba">Taraba</option>
+                                               <option value="Yobe">Yobe</option>
+                                               <option value="Zamfara">Zamfara</option>
+
+  </select>
+		</div>
+
+					 
+			<div class="State_choice_batch_choice">
+					<select id="batch-select" class="choose-sel select-input" >
+                                 				<option > Choose Batch</option>
+                                               <option value="A">A</option>
+                                               <option value="B">B</option>
+                                               <option value="C" disabled>C</option>
+											   
+											   
+</select>
+				
+			</div>		
+
+
+		
+			</div>	
+
+    <div class="text_center padd_10 year_div" >
+     
+
+  <div class="" >
+      <span>Select a Year </span>
+                                              
+	<ons-list>
+ <ons-list-item tappable class="item_list"> 
+      <div class="center">
+		<div class="list-item__title yeardiv" id="mainyear"> </div>	
+
+			
+	  </div>
+	  			
+	  		</ons-list-item>
+  <ons-list-item tappable class="item_list"> 		  
+<div class="center removepadding">
+<div class="list-item__title  yeardiv" id="mainyear_1"> </div>	
+</div>
+		</ons-list-item>
+  <ons-list-item tappable class="item_list"> 
+<div class="center removepadding">
+				<div class="list-item__title yeardiv" id="mainyear_2"> </div>	
+</div>
+					</ons-list-item>
+  <ons-list-item tappable class="item_list"> 
+				<div class="center removepadding">
+					<div class="list-item__title yeardiv" id="mainyear_3"> </div>	
+</div>
+						</ons-list-item>
+  <ons-list-item tappable class="item_list"> 
+					<div class="center removepadding">
+						<div class="list-item__title yeardiv" id="mainyear_4"> </div>	
+</div>
+
+
+		</ons-list-item>
+
+		  <ons-list-item tappable  class="item_list"> 
+<div id="goback"  class="left">
+	<on-button >
+		<ons-icon icon="ion-chevron-left, keyboard arrow left"></ons-icon>
+	</on-button>
+</div>
+					<div class="center center-text-year">
+						<div class="list-item__title " id="selected_year"> </div>	
+</div>
+					<div  id="goforward" class="right">
+	<on-button id="btn_right">
+		<ons-icon icon="ion-chevron-right, keyboard arrow right"></ons-icon>
+	</on-button>
+</div>
+					 
+
+		</ons-list-item>
+		<ons-list-item tappable  id=""> 
+			
+								<div class="center">
+											
+									<ons-button id="btngetyearbk" class="btn-viewwall">Get Year book</ons-button>
+									
+			</div>
+								
+					</ons-list-item>
+
+  <ons-progress-bar id="loading_progress_from__yearbook" indeterminate></ons-progress-bar>
+ <ons-list-item tappable  id="errormess_no_data_avail"> 
+
+					<div class="center">
+								
+						<div class="list-item__title " id="message_from_s3">Sorry No Data on the search</div>	
+</div>
+					
+		</ons-list-item>
+	
+
+					
+			
+
+	
+	
+	</ons-list>
+
+
+   
+  </div>
+           
+    </div>
+
+
+
+	</div>
+	   
+
+
+
+	</ons-page>
+
+</ons-template>
+
+
+<ons-template id="corperwall.html">
+    <ons-page id="corperwallpage">
+   
+       <ons-toolbar>
+            
+       <div class="left">
+        <ons-back-button>Back</ons-back-button>
+	  </div>
+	<div class="center" id="ii" ></div>
+  
+       </ons-toolbar>
+	
+   			<div id="Wall_containers_corpers_page">
+
+
+			
+			</div>
+
+
+
+
+        
+    </ons-page>
+</ons-template>
+   
+<ons-template id="profile.html">
+    <ons-page id="profilepage">
+       <ons-toolbar>
+      <div class="center"></div>
+    </ons-toolbar>
+        <div id="profilepage-container">
+
+
+            <div class="profile_display_container">
+                <img class="profile_display" src="" alt="">
+            </div>
+
+
+            <div class="info">
+
+                <ons-list>
+                    <ons-list-item>
+                        <div class="left">
+
+                        </div>
+                        <div class="center switch_block">
+                            Save
+                            <div class="switch_class_edit">   <ons-switch id="edit_switch"></ons-switch>	</div>
+
+                            Edit
+                        </div>
+                        <div class="right">
+
+                        </div>
+
+                    </ons-list-item>
+
+                    <ons-list-item tappable class="item_list">
+
+                        <div class="center">
+                            <span class="list-item__title">First Name : </span>
+                            <span class="list-item__subtitle"><input type="text" id="First_Name" class="text-input profile_edit" placeholder="First Name" value=""></span>
+                        </div>
+
+
+                    </ons-list-item>
+                    <ons-list-item tappable class="item_list">
+
+                        <div class="center">
+                            <span class="list-item__title">Middle Name : </span>
+                            <span class="list-item__subtitle"><input type="text" id="Middle_Name" class="text-input profile_edit" placeholder="Middle Name " value=""></span>
+                        </div>
+
+
+                    </ons-list-item>
+                    <ons-list-item tappable class="item_list">
+
+                        <div class="center">
+                            <span class="list-item__title">Last Name : </span>
+                            <span class="list-item__subtitle"><input type="text" id="Last_Name" class="text-input profile_edit" placeholder="Last Name" value=""></span>
+                        </div>
+
+
+                    </ons-list-item>
+
+
+                    <ons-list-item tappable class="item_list">
+
+                        <div class="center">
+                            <span class="list-item__title">State Code </span>
+                            <span id="StateCode" class="list-item__subtitle text-input"></span>
+                        </div>
+
+                    </ons-list-item>
+
+                    <ons-list-item tappable class="item_list">
+
+                        <div class="center">
+                            <span class="list-item__title">Email: </span>
+                            <div class="list-item__subtitle"><input type="text" id="Email" class="text-input profile_edit" placeholder="Email" value=""></div>
+
+                        </div>
+
+                    </ons-list-item>
+
+                    <ons-list-item tappable class="item_list">
+
+                        <div class="center">
+                            <span class="list-item__title">Phone No: </span>
+                            <div class="list-item__subtitle"><input type="text" id="PhoneNo" class="text-input profile_edit" placeholder="Phone Number" value=""></div>
+
+                        </div>
+
+                    </ons-list-item>
+
+                    <ons-list-item tappable class="item_list">
+
+                        <div class="center">
+                            <span class="list-item__title">C.D.S Unit :</span>
+                            <div class="list-item__subtitle"><input type="text" id="CDSUnit" class="text-input profile_edit" placeholder="C.D.S Unit" value=""></div>
+                            <span id="CDS_val" class="list-item__subtitle"></span>
+                        </div>
+
+                    </ons-list-item>
+
+
+                    <ons-list-item tappable class="item_list">
+
+                        <div class="center">
+                            <span class="list-item__title">L.G.A of Service :</span>
+                            <div class="list-item__subtitle"><input type="text" id="LGAUnit" class="text-input profile_edit" placeholder="L.G.A" value=""></div>
+
+                        </div>
+
+                    </ons-list-item>
+
+                    <ons-list-item tappable class="item_list">
+
+                        <div class="center">
+                            <span class="list-item__title">Institution of Graduation :</span>
+                            <div class="list-item__subtitle"><input type="text" id="institution" class="text-input profile_edit" placeholder="Institution" value=""></div>
+
+                        </div>
+
+                    </ons-list-item>
+
+                    <ons-list-item tappable class="item_list">
+
+                        <div class="center">
+                            <span class="list-item__title">Call-up Number :</span>
+                            <div class="list-item__subtitle"><input type="text" id="callup" class="text-input profile_edit" placeholder="Call-up Number" value=""></div>
+
+                        </div>
+
+                    </ons-list-item>
+
+
+                    <ons-list-item tappable class="item_list">
+
+                        <div class="center">
+                            <span class="list-item__title">P.P.A :</span>
+                            <div class="list-item__subtitle"><input type="text" id="ppa" class="text-input profile_edit" placeholder="P.P.A" value=""></div>
+
+                        </div>
+
+                    </ons-list-item>
+
+
+                    <ons-list-item tappable class="item_list">
+
+                        <div class="center">
+                            <span class="list-item__title">Age :</span>
+                            <div class="list-item__subtitle"><input type="date" id="Age" class="text-input profile_edit" placeholder="Age" value=""></div>
+
+                        </div>
+
+                    </ons-list-item>
+
+
+                    <ons-list-item tappable class="item_list">
+
+                        <div class="center">
+                            <span class="list-item__title">State of Origin :</span>
+                            <div class="list-item__subtitle"><input type="text" id="stateoforigin" class="text-input profile_edit" placeholder="State of Origin" value=""></div>
+
+                        </div>
+
+                    </ons-list-item>
+
+
+                    <ons-list-item class="item_list">
+                        <div class="left">
+                            <ons-icon icon="ion-ios-locked-outline,lock outline "></ons-icon>
+                        </div>
+                        <div class="center">
+                            <ons-button id="btn_change_password"> Change Password </ons-button>
+                        </div>
+                    </ons-list-item>
+
+                </ons-list>
+
+                <div class="about_me">
+                    <div style="background-color: #eee; height: auto; padding: 1px 0 0 0;">
+                        <div class="card">
+                            <div class="title">
+                                About Me
+                            </div>
+                            <textarea id="AboutME" class="textarea--transparent textarea_css card__content profile_edit" placeholder="About Me"></textarea>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            
+            <hr>
+            <h5 class="wall_title">My Wall</h5>
+
+            <div id="image-slide">
+                <div class="images">
+                    
+                </div>
+                <!-- Swiper -->
+                <div class="swiper-container_profile">
+                    <div class="swiper-wrapper">
+                       
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination_profile"></div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev_profile"></div>
+                    <div class="swiper-button-next_profile"></div>
+
+                    <!-- If we need scrollbar -->
+                    <div class="swiper-scrollbar_profile"></div>
+            </div>
+
+
+            <div class="add_update">
+
+
+
+
+                <div class="textarea_container">
+
+                    <textarea id="text_area_post" placeholder="Post a Memory"></textarea>
+                </div>
+
+                <div class="btn_media">
+
+                    <ons-fab id="camera_post" class="btn_fab">
+                        <ons-icon icon="ion-ios-camera,camera enhance"></ons-icon>
+                    </ons-fab>
+                    <ons-fab id="video_post" disabled class="btn_fab">
+                        <ons-icon icon="ion-ios-videocam,videocam"></ons-icon>
+                    </ons-fab>
+
+
+                </div>
+
+                <ons-button id="btn_Post_event" modifier="large--quiet">Post Events</ons-button>
+
+
+
+                <ons-progress-bar class="loading_progress" indeterminate></ons-progress-bar>
+            </div>
+
+
+            <div>
+
+
+
+                <div class="Wall_containers">
+
+
+                    <div id="random_timestamp" class="events">
+                        <span class="time_of_event_display">today</span>
+                        
+                        <div class="info">
+                            <div class="card">
+                                <div class="title pic_title">
+                                    Chillz
+                                </div>
+                                <div class="card__content">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam minima dignissimos quas esse deleniti. Mollitia ullam modi optio, delectus accusantium voluptas impedit dolores ipsam non odio! Ex nobis repudiandae magni.
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam minima dignissimos quas esse deleniti. Mollitia ullam modi optio, delectus accusantium voluptas impedit dolores ipsam non odio! Ex nobis repudiandae magni.
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam minima dignissimos quas esse deleniti. Mollitia ullam modi optio, delectus accusantium voluptas impedit dolores ipsam non odio! Ex nobis repudiandae magni.
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="switch_block">
+
+                            <ons-button id="random_timestamp_random" modifier="large--quiet btn_del_profile_events">Delete</ons-button>
+
+                        </div>
+
+
+                    </div>
+
+
+                    <div id="timestamp1" class="events">
+                        <span class="time_of_event_display">23 hours ago</span>
+                        <img class="img_wall_pic" src="i/photo/25.jpg" width="100%">
+                        <div class="info">
+                            <div class="card">
+                                <div class="title pic_title">
+                                    Chillz
+                                </div>
+                                <div class="card__content">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam minima dignissimos quas esse deleniti. Mollitia ullam modi optio, delectus accusantium voluptas impedit dolores ipsam non odio! Ex nobis repudiandae magni.
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam minima dignissimos quas esse deleniti. Mollitia ullam modi optio, delectus accusantium voluptas impedit dolores ipsam non odio! Ex nobis repudiandae magni.
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam minima dignissimos quas esse deleniti. Mollitia ullam modi optio, delectus accusantium voluptas impedit dolores ipsam non odio! Ex nobis repudiandae magni.
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="switch_block">
+
+                            <ons-button id="random_timestamp_random2" modifier="large--quiet btn_del_profile_events">Delete</ons-button>
+
+                        </div>
+                    </div>
+
+
+
+                    <div id="timestamp22" class="events">
+                        <span class="time_of_event_display">4th-august-2016</span>
+                        <img class="img_wall_pic" src="i/photo/25.jpg" width="100%">
+                        <div class="info">
+                            <div class="card">
+                                <div class="title pic_title">
+                                    Chillz
+                                </div>
+                                <div class="card__content">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam minima dignissimos quas esse deleniti. Mollitia ullam modi optio, delectus accusantium voluptas impedit dolores ipsam non odio! Ex nobis repudiandae magni.
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam minima dignissimos quas esse deleniti. Mollitia ullam modi optio, delectus accusantium voluptas impedit dolores ipsam non odio! Ex nobis repudiandae magni.
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam minima dignissimos quas esse deleniti. Mollitia ullam modi optio, delectus accusantium voluptas impedit dolores ipsam non odio! Ex nobis repudiandae magni.
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="switch_block">
+
+                            <ons-button id="random_timestamp_random3" modifier="large--quiet btn_del_profile_events">Delete</ons-button>
+
+                        </div>
+                    </div>
+                    <div id="timestamp222" class="events">
+                        <span class="time_of_event_display">4th-august-2016</span>
+
+                        <div class="info">
+                            <div class="card">
+                                <div class="title pic_title">
+                                    Chillz
+                                </div>
+                                <div class="card__content">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam minima dignissimos quas esse deleniti. Mollitia ullam modi optio, delectus accusantium voluptas impedit dolores ipsam non odio! Ex nobis repudiandae magni.
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam minima dignissimos quas esse deleniti. Mollitia ullam modi optio, delectus accusantium voluptas impedit dolores ipsam non odio! Ex nobis repudiandae magni.
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam minima dignissimos quas esse deleniti. Mollitia ullam modi optio, delectus accusantium voluptas impedit dolores ipsam non odio! Ex nobis repudiandae magni.
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="switch_block">
+
+                            <ons-button id="random_timestamp_random4" modifier="large--quiet btn_del_profile_events">Delete</ons-button>
+
+                        </div>
+                    </div>
+                    <div id="timestamp221" class="events">
+                        <span class="time_of_event_display">4th-august-2016</span>
+                        <video controls class="video_event_display">
+                            <source src="a.mp4" type="video/mp4">
+                            <source src="a.ogg" type="video/ogg">
+
+                        </video>
+                        <div class="info">
+                            <div class="card">
+                                <div class="title pic_title">
+                                    Chillz
+                                </div>
+                                <div class="card__content">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam minima dignissimos quas esse deleniti. Mollitia ullam modi optio, delectus accusantium voluptas impedit dolores ipsam non odio! Ex nobis repudiandae magni.
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam minima dignissimos quas esse deleniti. Mollitia ullam modi optio, delectus accusantium voluptas impedit dolores ipsam non odio! Ex nobis repudiandae magni.
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam minima dignissimos quas esse deleniti. Mollitia ullam modi optio, delectus accusantium voluptas impedit dolores ipsam non odio! Ex nobis repudiandae magni.
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="switch_block">
+
+                            <ons-button id="random_timestamp_random6" modifier="large--quiet btn_del_profile_events">Delete</ons-button>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+<!--
+<ons-template id="Video_dialog_page.html">
+<ons-dialog id="Video_dialog">
+  
+
+    <div class="camera_option_title"> Upload picture from.. </div>
+  <div class="dialog-content">
+  
+     <ons-button id="CAMERA"  class="btn_picture_choice">Camera</ons-button>
+    <ons-button id="PHOTOLIBRARY" class="btn_picture_choice" >From Phone</ons-button>
+  </div>
+  <div class="btn_picture_choice_cancel">
+   
+    <ons-button id="camera_option_cancel_btn" class="center" >Cancel</ons-button>
+  </div>
+
+</ons-dialog>
+	</ons-template>
+
+-->
+
+<ons-template id="Picture_dialog_page.html">
+<ons-dialog id="Picture_dialog">
+  
+
+    <div class="camera_option_title"> Upload picture from.. </div>
+  <div class="dialog-content">
+	
+     <button id="CAMERA"  class="btn_picture_choice  button--quiet">Camera</button>
+    <button id="PHOTOLIBRARY" class="btn_picture_choice button--quiet" >From Phone</button>
+  </div>
+  <div class="btn_picture_choice_cancel">
+   
+	<ons-button id="camera_option_cancel_btn" class="center" >Cancel</ons-button>
+	
+  </div>
+
+</ons-dialog>
+	</ons-template>
+
+
+
+		<ons-template id="password_change_dialog_page.html">
+  <ons-dialog id="password_change_dialog">
+    <div class="text_center padd_10" >
+     
+
+  <div class="p-margin-top text_center" >
+    <p>
+      <ons-input id="input_Current" modifier="underbar" type="password" placeholder="Current" float></ons-input>
+    </p>
+    <p>
+      <ons-input id="input_password" modifier="underbar" type="password" placeholder="Password" float></ons-input>
+    </p>
+    <p>
+      <ons-input id="input_confrim_password" modifier="underbar" type="password" placeholder="Confirm Password" float></ons-input>
+	</p>
+	   <p id="change_pass_errormsg" class="p-margin-top crimson_text">  
+		    
+          Passwords don't match
+    </p>
+        
+     <p  id="change_pass_signinspinner-2" class="p-margin-top" >
+       <ons-icon  spin icon="ion-load-a, md-spinner"  size="30px" class="green-icon">
+       </ons-icon>
+    </p>
+
+
+    <p id="change_pass_successmsg" class="p-margin-top">
+
+      <ons-icon class="green-icon"  icon="ion-checkmark-circled, done"  size="20px">
+
+
+      </ons-icon>
+        
+    </p>
+    
+    <div class="p-margin-top">
+      <ons-button class="change_password_dialog_btn" id="submit_new_pass">Ok</ons-button>
+        <ons-button class="change_password_dialog_btn" id="cancel" >Cancel</ons-button>
+    </div>
+   
+  </div>
+           
+ 
+    </div>
+  </ons-dialog>
+</ons-template>
+
+<div id="saving_fields_toast" class="toast">
+  <div class="toast__message">The fields are being Saved.</div>
+  <button class="toast__button">Dismiss</button>
+</div>
+
+
+
+<div id="saved_info_fields_toast" class="toast">
+  <div class="toast__message">Password Changed.</div>
+  <button class="toast__button">Dismiss</button>
+</div>
+
+
+<div id="Loading_successful_toast" class="toast">
+  <div class="toast__message">Post Successful</div>
+  
+</div>
+
+
+<div  id="edit_fields_toast" class="toast">
+  <div class="toast__message">You can edit the field now</div>
+  <button class="toast__button">Dismiss</button>
+</div>
+
+	</ons-page>
+
+
+</ons-template>
+
+
+<ons-template id="setting.html">
+    <ons-page 		id="settingpage">
+   
+       <ons-toolbar>
+
+             <div class="left">
+        <ons-toolbar-button class="open-menu" id="Logout">
+			 Log Out
+      
+        </ons-toolbar-button>
+      </div>
+
+      <div class="center"></div>
+	</ons-toolbar>
+	
+	
+<div class="card">
+	  <div class="title_card_contact">
+     Contact 
+	</div>
+	<div class="card__content">
+				Plot 416, Tigris Crescent Off Aguiyi Ironsi Street, Maitama. PMB 138, Garki ,Abuja.
+	</div>
+
+	
+
+
+
+
+	</div>
+
+
+		
+<div class="card">
+		 <div class="title_card_contact">
+		
+		Vision Statement	
+		</div>
+	<div class="card__content">
+		To develop a sound and result oriented organization that is strongly committed to its set objectives particularly those of national unity and even development. An organization that is well motivated and capable of bringing out the best qualities in our youths and imparting in them the right attitude and values for nation-building. An organization that serves as a catalyst to national development, and a source of pride and fulfillment to its participating graduate youths
+		</div>
+	</div>
+
+		
+<div class="card">
+
+
+			 <div class="title_card_contact">
+	Mission Statement
+		</div>
+	<div class="card__content">
+	To build a pragmatic organization that is committed to its set objectives with the ultimate goal of producing future leadership with positive national ethos-Leadership that is vibrant, proud and committed to the unity and even development of the Nigeria State.
+
+ 
+To be at the fore front of National development efforts, as well as serve as a profitable platform for imparting in our youths values of nationalism, patriotism, loyalty and accountable leadership.
+
+ 
+To raise the moral tone of our youths by giving them opportunity to learn about high ideals of national achievement, social and cultural improvement.
+
+ 
+To develop in our youths attitude of mind acquired through shared experience, and suitable training which would make them more amenable to mobilization in the national interest.
+
+ 
+To ensure Nigerian youths acquire the spirit of self-reliance, a reliable source of economic empowerment and effective participation in nation building.
+
+ 
+To develop an organization that is alive to its responsibilities and responsive to the needs of the country.
+
+	</div>
+	</div>
+    </ons-page>
+</ons-template>
+
+   
+ 
+</body>
+
+</html>
+
+
+
+
+
